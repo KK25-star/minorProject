@@ -1,0 +1,148 @@
+
+/*** ESSENTIAL STYLES ***/
+.menu{ float:right; padding-top:40px; padding-bottom:30px;}
+
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu li {
+	position: relative;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	background:#15579f;
+	z-index:100;
+		opacity:10;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+border-bottom:#0e4786 solid 1px;
+}
+
+.sf-menu ul:hover {
+background:#104f94;
+}
+
+.sf-menu > li {
+	float:left; 
+	list-style:none; 
+	padding-right:10px;
+	color:#533c47; 
+	
+	
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+	position:absolute;
+}
+
+.sf-menu > li a{font-family: 'Oswald', sans-serif; font-size:15px; color:#fff; text-align:left; padding:8px 14px 8px 14px; text-transform:uppercase;
+}
+.sf-menu a {
+	display: block;
+	position: relative;
+	font-family: 'Oswald', sans-serif; font-size:15px; color:#afb0a9; text-align:center; padding:8px 14px 8px 14px; text-transform:uppercase;
+}
+
+.sf-menu a:hover {
+background:#104f94; padding:8px 14px 8px 14px; color:#fff;}
+
+.sf-menu a.active {
+background:#104f94;padding:8px 14px 8px 14px; color:#fff;}
+
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float: right;
+	margin-bottom: 1em;
+}
+.sf-menu ul {
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+	z-index:100;
+	
+}
+.sf-menu a {
+	padding: .75em 1em;
+	text-decoration:none;
+	zoom: 1; /* IE7 */
+	text-transform:none;
+}
+.sf-menu a {
+	color: #13a;
+	text-transform:none;
+}
+.sf-menu li {
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+
+.current{ text-transform:none;}
+
+.sf-menu li > ul a{ text-transform: none;}
+.sf-menu ul li {border-bottom:#0e4786 solid 1px;
+}
+
+.sf-menu ul li a{ font-size:14px; font-weight:normal;font-family: 'Oswald', sans-serif;}
+.sf-menu ul ul li {
+	background: #15579f;
+
+}
+
+.sf-menu ul ul li:hover{
+	background: #104f94 ;
+
+}
+
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	/* only transition out, not in */
+	background:#104f94;
+}
+.sf-menu li.sfHover >a {
+	/* only transition out, not in */
+	color:#fff;
+}
+
+
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	padding-right: 2.25em;
+	min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator {
+	position: absolute;
+	display: block;
+	right: .75em;
+	top: .9em;
+	width: 10px;
+	height: 10px;
+	text-indent: -999em;
+	overflow: hidden;
+	background: url(../images/arrows-ffffff.png) no-repeat 0 -100px;
+}
+
+li:hover > a .sf-sub-indicator,
+li.sfHover > a .sf-sub-indicator {
+	background-position: -10px -100px;
+
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator {
+	background-position: 0 0;
+}
+.sf-menu ul li:hover > a .sf-sub-indicator,
+.sf-menu ul li.sfHover > a .sf-sub-indicator {
+	background-position: -10px 0;
+
+}
