@@ -8,7 +8,7 @@ body {background:#104f94;font-family: 'Trebuchet MS', serif;font-size:12px;color
 h1{font-family: 'Oswald', sans-serif; font-size:24px; text-transform: uppercase; font-weight:normal; color:#fff;}
 h2{font-family: 'Oswald', sans-serif; font-size:20px; text-transform: uppercase; font-weight:normal;}
 h3{font-family: 'Oswald', sans-serif; font-size:14px; text-transform: uppercase; font-weight:normal;}
-h4{ color:#ffc01d; font-size:15px; font-weight:normal; font-family: 'Trebuchet MS', serif;} 
+h4{ color:#ffc01d; font-size:15px; font-weight:normal; font-family: 'Trebuchet MS', serif;}
 h6{ color:#ffc01d; font-size:14px; font-weight:normal;}
 
 p{ font-size:14px;}
@@ -31,16 +31,16 @@ body sytles start
 .page-wrapper{width:960px; margin:0 auto; margin-top:-30px;}
 .wrapper2{ width:960px; margin-bottom:60px; overflow:hidden;}
 /*-------------------------------------------------
-PANEL  
+PANEL
 -------------------------------------------------*/
 .services{ width:300px; float:left;}
-.services .ititle h1{ color:#ffc01d; margin-bottom:30px;}
+.services .ititle h1{text-align:center; color:#ffc01d; margin-bottom:30px;}
 .services img{ margin-bottom:30px;}
 .services .content p{ color:#85aedb; font-size:14px;}
 .services .content .button{ background:url(../images/button2.png) no-repeat; width:80px; height:30px; text-align:center; line-height:30px; margin-top:30px; margin-bottom:70px;}
 
 /*-------------------------------------------------
-HEADESECTION 
+HEADESECTION
 -------------------------------------------------*/
 .header-wrapper{ background:#ffcb43;}
 .logo{float:left; width:300px; height:120px; padding-top:50px; text-align:center; background:url(../images/logobg.png) no-repeat center;position:absolute;}
@@ -54,7 +54,7 @@ HEADESECTION
 .menu ul li a.active{ color:#104f94;}*/
 
 /*-------------------------------------------------
-BANNER SECTION 
+BANNER SECTION
 -------------------------------------------------*/
 .banner-wrapper{background:#ffc01d; overflow:hidden;}
 .banner{width:960px; margin:0 auto; padding-top:60px; overflow:hidden;}
@@ -70,7 +70,7 @@ BANNER SECTION
 .banner .content .button a:hover{ color:#104f94;}
 
 /*-------------------------------------------------
-PAGE CONTENT SECTION 
+PAGE CONTENT SECTION
 -------------------------------------------------*/
 
 .page-content{background:#1664b9; overflow:hidden;}
@@ -83,14 +83,14 @@ PAGE CONTENT SECTION
 
 
 /*-------------------------------------------------
-SERIVES SECTION 
+SERIVES SECTION
 -------------------------------------------------*/
 .serivces{width:960px; margin:0 auto; margin-top:130px;}
 .serivces .panel{ float:left;}
 
 
 /*-------------------------------------------------
-BOX SECTION 
+BOX SECTION
 -------------------------------------------------*/
 .box{ width:280px; overflow:hidden; float:left; padding:45px 20px 45px 20px;}
 .box .icon{float:left; margin-right:20px;}
@@ -128,14 +128,16 @@ CONTACT FORM CLASSS
 .contact-form .button{background: url(../images/submit-btn.png) no-repeat; color:#ffffff; text-transform:uppercase; font-family:'Oswald', sans-serif;border: none; margin-left:100px; margin-top:20px; width:100px; height:40px; color:#043e7f;}
 
 .address { float:left; width:370px; margin-left:30px;}
-.address .panel { border:none; color:#fff}
+.address .panel { font-size: 14px; border:none; color:#fff}
 .address .panel .title h1 {  color:#fff; padding-bottom:10px;}
+.address .panel .content address {color:#fff;}
+.address .panel .content p { color:#cce0ff;}
 .address .panel .content p span { color:#fff;}
 .address .panel .content p a{ text-decoration:none; color:#ffc01d;}
 .address .panel .content p a:hover{color:#fff;}
 
 /*-------------------------------------------------
-FOOTER SECTION 
+FOOTER SECTION
 -------------------------------------------------*/
 .footer-wrapper{background:#043e7f; overflow:hidden; padding-bottom:20px;}
 .footer{ width:960px; margin:0 auto; overflow:hidden; margin-top:60px;}
