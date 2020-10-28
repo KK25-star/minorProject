@@ -35,9 +35,9 @@ PANEL
 -------------------------------------------------*/
 .services{ width:300px; float:left;}
 .services .ititle h1{text-align:center; color:#ffc01d; margin-bottom:30px;}
-.services img{ margin-bottom:30px;}
-.services .content p{ color:#85aedb; font-size:14px;}
-.services .content .button{ background:url(../images/button2.png) no-repeat; width:80px; height:30px; text-align:center; line-height:30px; margin-top:30px; margin-bottom:70px;}
+.services img{ margin-bottom:30px; width: 300px; height: 150px;}
+.services .content p{ color:#85aedb; font-size:18px;}
+/*.services .content .button{ background:url(../images/button2.png) no-repeat; width:80px; height:30px; text-align:center; line-height:30px; margin-top:30px; margin-bottom:70px;}
 
 /*-------------------------------------------------
 HEADESECTION
