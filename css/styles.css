@@ -48,7 +48,8 @@ HEADESECTION
 .logo span{ color:#ffffff; font-size:16px;}
 
 .menu{ float:right; padding-top:38px;}
-.menu ul li{list-style:none; margin-right:20px;}
+.menu .intHover a:hover{background-color:#3089e8;}
+.menu ul li{list-style:none; }
 .menu ul li a{ color:#ffffff; text-decoration:none; font-family: 'Oswald', sans-serif; font-size:15px; text-transform: uppercase;}
 .menu ul li a:hover{ color:#ffffff;}
 .menu ul li a.active{ color:#104f94;}
