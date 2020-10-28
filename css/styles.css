@@ -125,7 +125,7 @@ CONTACT FORM CLASSS
 .contact-form label span {display: block; color:#fff;font-size:16px; font-family:'Oswald', sans-serif; float:left; width:80px; text-align:left; padding:5px 20px 0 0;}
 .contact-form .input_text {padding:10px 10px;width:400px;background:#043e7f;border:#1661b3 1px solid; color:#fff;  outline:none; font-family: 'Trebuchet MS', serif;}
 .contact-form .message{padding:10px 10px;width:400px; background:#043e7f; border:#1661b3 1px solid;overflow:hidden;height:150px; color:#fff; font-family: 'Trebuchet MS', serif; font-size:14px; outline:none;}
-.contact-form .button{background: url(../images/submit-btn.png) no-repeat; color:#ffffff; text-transform:uppercase; font-family:'Oswald', sans-serif;border: none; margin-left:100px; margin-top:20px; width:100px; height:40px; color:#043e7f;}
+.contact-form .button{background: url(../images/submit-btn.png) no-repeat; color:#ffffff; text-transform:uppercase; font-family:'Oswald', sans-serif;border: none; margin-left:100px; margin-top:20px; width:100px; height:40px; color:#043e7f; cursor:pointer;}
 
 .address { float:left; width:370px; margin-left:30px;}
 .address .panel { font-size: 14px; border:none; color:#fff}
