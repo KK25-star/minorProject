@@ -17,7 +17,7 @@ a:hover{ color:#ffc01d;}
 .clear{clear:both;}
 .title{ margin-bottom:30px;}
 .title h1{ color:#ffc01d;}
-.title h2{ color:#fff;}
+.title h2{font-size: 10px;color:#fff;}
 /*-------------------------------------------------
 body sytles start
 -------------------------------------------------*/
@@ -35,9 +35,9 @@ PANEL
 -------------------------------------------------*/
 .services{ width:300px; float:left;}
 .services .ititle h1{text-align:center; color:#ffc01d; margin-bottom:30px;}
-.services img{ margin-bottom:30px;}
-.services .content p{ color:#85aedb; font-size:14px;}
-.services .content .button{ background:url(../images/button2.png) no-repeat; width:80px; height:30px; text-align:center; line-height:30px; margin-top:30px; margin-bottom:70px;}
+.services img{ margin-bottom:30px; width: 300px; height: 150px;}
+.services .content p{ color:#85aedb; font-size:18px;}
+/*.services .content .button{ background:url(../images/button2.png) no-repeat; width:80px; height:30px; text-align:center; line-height:30px; margin-top:30px; margin-bottom:70px;}
 
 /*-------------------------------------------------
 HEADESECTION
@@ -48,8 +48,8 @@ HEADESECTION
 .logo span{ color:#ffffff; font-size:16px;}
 
 .menu{ float:right; padding-top:38px;}
-.menu .current{ color: #ffffff}
-.menu ul li{list-style:none; margin-right:20px;}
+.menu .intHover a:hover{background-color: #3089e8;}
+.menu ul li{list-style:none; }
 .menu ul li a{ color:#ffffff; text-decoration:none; font-family: 'Oswald', sans-serif; font-size:15px; text-transform: uppercase;}
 .menu ul li a:hover{ color:#ffffff;}
 .menu ul li a.active{ color:#104f94;}
