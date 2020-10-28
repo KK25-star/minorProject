@@ -45,13 +45,13 @@ HEADESECTION
 .header-wrapper{ background:#ffcb43;}
 .logo{float:left; width:300px; height:120px; padding-top:50px; text-align:center; background:url(../images/logobg.png) no-repeat center;position:absolute;}
 .logo h1{ color:#ffffff; font-size:35px;font-weight:normal;}
-.logo span{ color:#ffffff; font-size:14px;}
+.logo span{ color:#ffffff; font-size:16px;}
 
-/*.menu{ float:right; padding-top:38px;}
+.menu{ float:right; padding-top:38px;}
 .menu ul li{list-style:none; margin-right:20px;}
 .menu ul li a{ color:#ffffff; text-decoration:none; font-family: 'Oswald', sans-serif; font-size:15px; text-transform: uppercase;}
-.menu ul li a:hover{ color:#104f94;}
-.menu ul li a.active{ color:#104f94;}*/
+.menu ul li a:hover{ color:#ffffff;}
+.menu ul li a.active{ color:#104f94;}
 
 /*-------------------------------------------------
 BANNER SECTION
