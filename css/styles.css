@@ -62,7 +62,7 @@ BANNER SECTION
 .banner .content{ float:left; overflow:hidden;}
 .banner .content{overflow:hidden; }
 .banner .content .title{ float:left;}
-.banner .content .title h1{ font-size:95px; color:#104f94; font-weight:normal; margin-top:75px;}
+.banner .content .title h1{ font-size:60px; color:#104f94; font-weight:normal; margin-top:75px;}
 .banner .content .title span{ color:#ffffff; font-size:32px;}
 .banner .content .button{ background:url(../images/button.png) no-repeat; width:170px; height:50px; text-align:center; line-height:50px; margin-top:50px; margin-bottom:116px;}
 .banner .content .button:hover{ background:url(../images/button-hover.png) no-repeat; width:170px; height:50px; text-align:center; line-height:50px; margin-top:50px; margin-bottom:116px;}
@@ -78,7 +78,7 @@ PAGE CONTENT SECTION
 .panel{ width:100%; padding-bottom:30px;}
 .panel .title{ margin-bottom:30px;}
 .panel .title h1{ color:#ffc01d; text-transform:uppercase;}
-.panel .title h2{ color:#fff; font-size:16px;}
+.panel .title h2{ color:#fff; font-size:30px;}
 .panel .content p{ color:#9ac5f5; padding-bottom:20px;}
 
 
