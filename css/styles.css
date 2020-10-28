@@ -62,7 +62,7 @@ BANNER SECTION
 .banner .content{ float:left; overflow:hidden;}
 .banner .content{overflow:hidden; }
 .banner .content .title{ float:left;}
-.banner .content .title h1{ font-size:95px; color:#104f94; font-weight:normal; margin-top:75px;}
+.banner .content .title h1{ font-size:60px; color:#104f94; font-weight:normal; margin-top:75px;}
 .banner .content .title span{ color:#ffffff; font-size:32px;}
 .banner .content .button{ background:url(../images/button.png) no-repeat; width:170px; height:50px; text-align:center; line-height:50px; margin-top:50px; margin-bottom:116px;}
 .banner .content .button:hover{ background:url(../images/button-hover.png) no-repeat; width:170px; height:50px; text-align:center; line-height:50px; margin-top:50px; margin-bottom:116px;}
