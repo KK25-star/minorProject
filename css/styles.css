@@ -59,7 +59,7 @@ BANNER SECTION
 -------------------------------------------------*/
 .banner-wrapper{background:#ffc01d; overflow:hidden;}
 .banner{width:960px; margin:0 auto; padding-top:60px; overflow:hidden;}
-.banner img{float:right; margin-top:30px;}
+.banner img{float:right; margin-top:30px; width: 650px; height: 500px;}
 .banner .content{ float:left; overflow:hidden;}
 .banner .content{overflow:hidden; }
 .banner .content .title{ float:left;}
