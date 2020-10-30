@@ -122,7 +122,6 @@ LOGIN FORM CLASSS
 -------------------------------------------------*/
 
 .login body {font-family:'Oswald';}
-/*form {border: 3px solid #f1f1f1;}*/
 .login .container label { font-family: "Oswald"; font-size: 18px; color: #ffffff;}
 .login .container span.psw { font-size: 20px;}
 .login input[type=text], input[type=password] { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box; font-size: 18px;}
@@ -137,6 +136,7 @@ LOGIN FORM CLASSS
 /* Change styles for span and cancel button on extra small screens */
 .login @media screen and (max-width: 300px) { span.psw {  display: block; float: none;}
 .login .cancelbtn { width: 100%;}}
+.title .heading {text-align: center; font-size: 35px;}
 
 /*-------------------------------------------------
 CONTACT FORM CLASSS
