@@ -20,7 +20,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
 				<li class="current"> <a href="services.html">Services </a>
-          <ul class="intHover">
+					<ul class="intHover">
 						<li><a href="services.html">Cargo Service</a></li>
 						<li><a href="services.html">Ground Service</a></li>
 						<li><a href="services.html">Logistic Service</a></li>
@@ -32,17 +32,17 @@
 				<li class="current"> <a href="#">Login</a>
 					<ul class="intHover">
 						<li> <a href="#">Customer</a>
-              <ul>
-                <li> <a href="customer_register.html">Sign Up</a></li>
-                <li> <a href="customer_login.html">Sign In</a></li>
-              </ul>
-            </li>
+							<ul>
+								<li> <a href="customer_register.html">Sign Up</a></li>
+								<li> <a href="customer_login.html">Sign In</a></li>
+							</ul>
+						</li>
 						<li>  <a href="#">Transporter</a>
-              <ul>
-                <li> <a href="transporter_register.html">Sign Up</a></li>
-                <li> <a href="transporter_login.html">Sign In</a></li>
-              </ul>
-            </li>
+							<ul>
+								<li> <a href="transporter_register.html">Sign Up</a></li>
+								<li> <a href="transporter_login.html">Sign In</a></li>
+							</ul>
+						</li>
 					</ul>
 				</li>
         <li> <a href="contact.html">Contact</a> </li>
@@ -58,24 +58,30 @@
 <div class="page">
 <div class="panel">
 <div class="title">
-	<h1 class="heading">Transporter Login</h1>
+	<h1 class="heading">Customer Sign up</h1>
 </div>
 
 
 <div class="login">
   <form>
-  <!--   <div class="img">
+    <!-- <div class="img">
       <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>-->
+    </div> -->
 
     <div class="container">
-      <label for="uname"><b>Email</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit" >Login</button>
+        <label><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" id="name" required/>
+        <label><b>Second Name</b></label>
+        <input type="text" placeholder="Enter Secondname" id="sname" required/>
+        <label><b>Mobile No.</b></label>
+        <input type="text" placeholder="Enter Mobile No." id="mobno" required/>
+        <label><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" id="email" required/>
+        <label><b>New Password</b></label>
+        <input type="password" placeholder="Enter New Password" id="nwpsw" required/>
+        <label><b>Confirm Password</b></label>
+        <input type="password" placeholder="Enter Confirm Password" id="nwpsw" required/>
+        <button type="submit" >Login</button>
       <label>
         <input type="checkbox" class="checkboxs" checked="checked" name="remember"> Remember me
       </label>
@@ -101,7 +107,6 @@
     <div class="panel marRight30">
       <div class="title">
         <h1>company</h1>
-        <!--<h6>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod.</h6>-->
       </div>
       <div class="contnet">
         <ul>

@@ -124,13 +124,11 @@ LOGIN FORM CLASSS
 .login body {font-family:'Oswald';}
 .login .container label { font-family: "Oswald"; font-size: 18px; color: #ffffff;}
 .login .container span.psw { font-size: 20px;}
-.login input[type=text], input[type=password] { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box; font-size: 18px;}
+.login input[type=text], input[type=email], input[type=password] {background-color: #d1e5fa;width: 100%; padding: 6px 6px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box; font-size: 18px;}
 .login .container input.checkboxs {height: 20px; width: 20px;}
-.login button { background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;}
+.login button { background-color: #4CAF50; color: white; padding: 10px 12px; margin: 8px 0; border: none; cursor: pointer; width: 100%; font-size: 18px;}
 .login button:hover { opacity: 0.8;}
-.login .cancelbtn { width: auto; padding: 10px 18px; background-color: #f44336;}
-.login .img { text-align: center; margin: 24px 0 12px 0;}
-.login img.avatar { width: 40%; border-radius: 50%;}
+.login .cancelbtn { width: auto; padding: 8px 10px; background-color: #f44336;}
 .login { padding: 16px;}
 .login span.psw { float: right; padding-top: 16px;}
 /* Change styles for span and cancel button on extra small screens */
