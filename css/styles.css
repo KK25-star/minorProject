@@ -119,7 +119,6 @@ LOGIN FORM CLASSS
 /* Change styles for span and cancel button on extra small screens */
 .login @media screen and (max-width: 300px) { span.psw {  display: block; float: none;}
 .login .cancelbtn { width: 100%;}}
-.login .container .tab { tab-size: 4;}
 .title .heading {text-align: center; font-size: 35px;}
 
 /*-------------------------------------------------
