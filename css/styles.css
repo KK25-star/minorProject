@@ -159,3 +159,23 @@ FOOTER SECTION
 .phone{ margin-top:20px; padding-bottom:30px; margin-bottom:30px; border-bottom:#104f94 solid 1px;}
 .phone img{ float:left; margin-right:10px;}
 .phone h1{ color:#ffc01d;}
+
+/*-------------------------------------------------
+Floating Back-To-Top Button
+-------------------------------------------------*/
+    #myBtn {
+        position: fixed;
+        bottom: 10px;
+        float: right;
+        right: 10px;
+        max-width: 77px;
+        width: 100%;
+        font-size: 13px;
+        border-color: rgba(85, 85, 85, 0.2);
+        background-color: red;
+        padding: .5px;
+        border-radius: 4px;
+      }
+    #myBtn:hover{
+      background-color: green;
+    }
