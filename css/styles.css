@@ -14,6 +14,9 @@ h6{ color:#ffc01d; font-size:14px; font-weight:normal;}
 p{ font-size:14px;}
 a{ color:#fff; text-decoration:none;}
 a:hover{ color:#ffc01d;}
+button{position: fixed; background: none; border: none; float: right; bottom: 10px; right: 10px; opacity: 0.8;}
+button img{ width: 30px; height: 30px;}
+button:hover{opacity: 1;}
 .clear{clear:both;}
 .title{ margin-bottom:30px;}
 .title h1{ color:#ffc01d;}
@@ -162,12 +165,14 @@ FOOTER SECTION
 
 /*-------------------------------------------------
 Floating Back-To-Top Button
--------------------------------------------------*/
-    #myBtn {
+-------------------------------------------------
+  myBtn {
         position: fixed;
-        bottom: 10px;
+        border: none;
         float: right;
+        bottom: 10px;
         right: 10px;
+        opacity: 0.8;
         max-width: 77px;
         width: 100%;
         font-size: 13px;
@@ -177,5 +182,5 @@ Floating Back-To-Top Button
         border-radius: 4px;
       }
     #myBtn:hover{
-      background-color: green;
-    }
+      opacity: 1;
+    }*/
