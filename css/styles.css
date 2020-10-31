@@ -165,6 +165,6 @@ FOOTER SECTION
 Floating Back-To-Top Button
 -------------------------------------------------*/
 
-.totop button{position: fixed; background: none; border: none; float: right; bottom: 10px; right: 10px; opacity: 0.8;}
-.totop button img{ width: 30px; height: 30px;border-radius: 8px;}
-.totop button:hover{opacity: 1;}
+.topbtn button{position: fixed; background: none; border: none; float: right; bottom: 10px; right: 10px; opacity: 0.8;}
+.topbtn button img{ width: 30px; height: 30px;border-radius: 8px;}
+.topbtn button:hover{opacity: 1;}
