@@ -11,7 +11,7 @@ h3{font-family: 'Oswald', sans-serif; font-size:14px; text-transform: uppercase;
 h4{ color:#ffc01d; font-size:15px; font-weight:normal; font-family: 'Trebuchet MS', serif;}
 h6{ color:#ffc01d; font-size:14px; font-weight:normal;}
 
-p{ font-size:14px;}
+p{ font-size:15px;}
 a{ color:#fff; text-decoration:none;}
 a:hover{ color:#ffc01d;}
 
@@ -82,7 +82,6 @@ PAGE CONTENT SECTION
 .panel .title h1{ color:#ffc01d; text-transform:uppercase;}
 .panel .title h2{ color:#fff; font-size:30px;}
 .panel .content p{ color:#9ac5f5; padding-bottom:20px;}
-
 
 /*-------------------------------------------------
 SERIVES SECTION
