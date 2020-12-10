@@ -64,26 +64,24 @@
 
 
 <div class="login">
-  <form>
+  <form action="transporterProcess.php" method="post">
 
     <div class="container">
         <label>Name</label>
-        <input type="text" placeholder="Enter First Name" id="name" required/>
-        <label>Second Name</label>
-        <input type="text" placeholder="Enter Last Name" id="sname" required/>
+        <input name="UName" type="text" placeholder="Enter First Name"  required/>
         <label>Mobile No.</label>
-        <input type="text" placeholder="Enter Mobile No." id="mobno" required/>
+        <input name="MobNo" type="text" placeholder="Enter Mobile No." required/>
         <label>Email</label>
-        <input type="email" placeholder="Enter Email" id="email" required/>
+        <input name="Email" type="email" placeholder="Enter Email" required/>
         <label>New Password</label>
-        <input type="password" placeholder="Enter New Password" id="nwpsw" required/>
+        <input name="Password" type="password" placeholder="Enter New Password" required/>
         <label>Confirm Password</label>
-        <input type="password" placeholder="Enter Confirm Password" id="nwpsw" required/>
-				<input type="radio" id="ind" name="work" value="individual" required/>
+        <input name="Cpass" type="password" placeholder="Enter Confirm Password" required/>
+				<input name="Work" type="radio" id="ind" value="individual" required/>
 				<label>Individual</label>
-				<input type="radio" id="transa" name="work" value="transportinagency" required/>
+				<input name="Work" type="radio" id="transa" value="agency" required/>
 				<label>Transporting Agency</label><br><br>
-        <button type="submit" >Login</button>
+        <button name="btn-save" type="submit" >Login</button>
       <label>
         <input type="checkbox" class="checkboxs" checked="checked" name="remember"> Remember me
       </label>

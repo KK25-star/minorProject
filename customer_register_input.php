@@ -14,15 +14,14 @@
 <div class="header-wrapper">
 	<div class="wrapper">
 		<div class="logo">
-          	<h1>Grow More</h1>
-            <span>Transportation and Courier Service</span>
-	 </div>
+            	<h1>Grow More</h1>
+                <span>Transportation and Courier Service</span>        </div>
     	<div class="menu">
       <ul class="sf-menu" id="example">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
 				<li class="current"> <a href="services.html">Services </a>
-          <ul class="intHover">
+					<ul class="intHover">
 						<li><a href="services.html">Cargo Service</a></li>
 						<li><a href="services.html">Ground Service</a></li>
 						<li><a href="services.html">Logistic Service</a></li>
@@ -34,17 +33,17 @@
 				<li class="current"> <a href="#">Login/sign up</a>
 					<ul class="intHover">
 						<li> <a href="#">Customer</a>
-              <ul>
-                <li> <a href="customer_register.html">Sign Up</a></li>
-                <li> <a href="customer_login.html">Sign In</a></li>
-              </ul>
-            </li>
+							<ul>
+								<li> <a href="customer_register.html">Sign Up</a></li>
+								<li> <a href="customer_login.html">Sign In</a></li>
+							</ul>
+						</li>
 						<li>  <a href="#">Transporter</a>
-              <ul>
-                <li> <a href="transporter_register.html">Sign Up</a></li>
-                <li> <a href="transporter_login.html">Sign In</a></li>
-              </ul>
-            </li>
+							<ul>
+								<li> <a href="transporter_register.html">Sign Up</a></li>
+								<li> <a href="transporter_login.html">Sign In</a></li>
+							</ul>
+						</li>
 					</ul>
 				</li>
         <li> <a href="contact.html">Contact</a> </li>
@@ -60,38 +59,49 @@
 <div class="page">
 <div class="panel">
 <div class="title">
-	<h1 class="heading">Customer Login</h1>
+	<h1 class="heading">WELCOME TO GROW MORE FAMILY</h1>
 </div>
 
+<?php
 
-<div class="login">
-  <form action="customerLoginProcess.php" method="post">
-        <div class="container">
-       <label><b>Email</b></label>
-       <input name="UserName" type="text" placeholder="Enter Username" required/>
-       <label><b>Password</b></label>
-       <input name="Password" type="password" placeholder="Enter Password" required/>
-       <button name="btn_save" type="submit" >Login</button>
-      <label>
-        <input type="checkbox" class="checkboxs" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+    require_once('connection.php');
+    if (isset($_POST['btn-save']))
+    {
+       $UserName = mysqli_real_escape_string($conn,$_POST['UName']);
+       $MobNo = mysqli_real_escape_string($conn,$_POST['MobNo']);
+       $Email = mysqli_real_escape_string($conn,$_POST['Email']);
+       $Password = mysqli_real_escape_string($conn,$_POST['Password']);
+       $Cpassword = mysqli_real_escape_string($conn,$_POST["Cpass"]);
 
-    <div class="container">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw"><a href="#">Forgot Password?</a></span>
-    </div>
-  </form>
-  <div class="clear"></div>
-</div>
+       if ($Password != $Cpassword)
+        {
+           echo "Password not matched ";
+       }
+       else {
+           $Password = md5($Password);
+           $sql = "insert into customer (Name,MobNo,Email,Password) values ('$UserName','$MobNo','$Email','$Password')";
+           $result = mysqli_query($conn,$sql);
+
+           if ($result)
+           {
+              echo "Your record has been recorded in database";
+           }
+           else {
+              echo "Please check your query ";
+           }
+       }
+    }
+
+ ?>
+
+
 
 
 
 </div>
 </div>
 <div class="clear"></div>
-</div>
-<!---page-content--->
+</div><!---page-content--->
 
 <div class="footer-wrapper">
   <div class="footer">
