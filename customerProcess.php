@@ -66,7 +66,7 @@
 <?php
 
     require_once('connection.php');
-    if (isset($_POST['btn-save']))
+    if (isset($_POST['btn_save']))
     {
        $UserName = mysqli_real_escape_string($conn,$_POST['UName']);
        $MobNo = mysqli_real_escape_string($conn,$_POST['MobNo']);
@@ -80,7 +80,7 @@
        }
        else {
            $Password = md5($Password);
-           $sql = "insert into customer (Name,MobNo,Email,Password) values ('$UserName','$MobNo','$Email','$Password')";
+           $sql = "INSERT INTO customer (Name,MobNo,Email,Pass) VALUES ('$UserName','$MobNo','$Email','$Password')";
            $result = mysqli_query($conn,$sql);
 
            if ($result)

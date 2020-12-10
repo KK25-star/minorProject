@@ -81,15 +81,15 @@
        }
        else {
            $Password = md5($Password);
-           $sql = "insert into transporter (Name,MobNo,Email,Password,Work) values ('$UserName','$MobNo','$Email','$Password','$Work')";
+           $sql = "insert into transporter (Name,MobNo,Email,Pass,Work) values ('$UserName','$MobNo','$Email','$Password','$Work')";
            $result = mysqli_query($conn,$sql);
 
            if ($result)
            {
-              echo "Your record has been recorded in database";
+              echo "<h1>Your record has been recorded in database</>";
            }
            else {
-              echo "Please check your query ";
+              echo "<h1>Please check your query</> ";
            }
        }
     }

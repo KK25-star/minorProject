@@ -65,34 +65,32 @@
 <?php
 
     require_once('connection.php');
-    if (isset($_POST['btn-save']))
-    {
-       $UserName = mysqli_real_escape_string($conn,$_POST['UName']);
-       $MobNo = mysqli_real_escape_string($conn,$_POST['MobNo']);
-       $Email = mysqli_real_escape_string($conn,$_POST['Email']);
-       $Password = mysqli_real_escape_string($conn,$_POST['Password']);
-       $Cpassword = mysqli_real_escape_string($conn,$_POST["Cpass"]);
+  //  $db = "minorproject";
+    //mysqli_select_db($db);
+    //mysql_select_db( 'minorproject');
+    if (isset($_POST['UserName'])) {
 
-       if ($Password != $Cpassword)
-        {
-           echo "Password not matched ";
-       }
-       else {
-           $Password = md5($Password);
-           $sql = "insert into customer (Name,MobNo,Email,Password) values ('$UserName','$MobNo','$Email','$Password')";
-           $result = mysqli_query($conn,$sql);
+      $Username = $_POST['UserName'];
+      $Password = $_POST['Password'];
 
-           if ($result)
-           {
-              echo "Your record has been recorded in database";
-           }
-           else {
-              echo "Please check your query ";
-           }
-       }
+      $sql = "select * from customer where Email = '".$Username."' AND Password = '".$Password."' limit 1";
+
+      $result = mysql_query($sql);
+      if (mysql_num_rows($result)==1) {
+        echo "Logged In";
+
+
+      }
+      else {
+        echo "Incorrect username/password";
+        exit();
+      }
+
     }
 
+
  ?>
+
 
 
 

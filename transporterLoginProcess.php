@@ -21,7 +21,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
 				<li class="current"> <a href="services.html">Services </a>
-          <ul class="intHover">
+					<ul class="intHover">
 						<li><a href="services.html">Cargo Service</a></li>
 						<li><a href="services.html">Ground Service</a></li>
 						<li><a href="services.html">Logistic Service</a></li>
@@ -33,17 +33,17 @@
 				<li class="current"> <a href="#">Login/sign up</a>
 					<ul class="intHover">
 						<li> <a href="#">Customer</a>
-              <ul>
-                <li> <a href="customer_register.html">Sign Up</a></li>
-                <li> <a href="customer_login.html">Sign In</a></li>
-              </ul>
-            </li>
+							<ul>
+								<li> <a href="customer_register.html">Sign Up</a></li>
+								<li> <a href="customer_login.html">Sign In</a></li>
+							</ul>
+						</li>
 						<li>  <a href="#">Transporter</a>
-              <ul>
-                <li> <a href="transporter_register.html">Sign Up</a></li>
-                <li> <a href="transporter_login.html">Sign In</a></li>
-              </ul>
-            </li>
+							<ul>
+								<li> <a href="transporter_register.html">Sign Up</a></li>
+								<li> <a href="transporter_login.html">Sign In</a></li>
+							</ul>
+						</li>
 					</ul>
 				</li>
         <li> <a href="contact.html">Contact</a> </li>
@@ -59,33 +59,35 @@
 <div class="page">
 <div class="panel">
 <div class="title">
-	<h1 class="heading">Transporter Login</h1>
+	<h1 class="heading">WELCOME TO GROW MORE FAMILY</h1>
 </div>
 
+<?php
 
-<div class="login">
-  <form action="transporterLoginProcess.php" method="post">
+    require_once('connection.php');
+    if (isset($_POST['Username'])) {
 
-    <div class="container">
-      <label ><b>Email</b></label>
-      <input name="Username" type="text" placeholder="Enter Username" name="uname" required>
+      $Username = $_POST['Username'];
+      $Password = $_POST['Password'];
+      $Password = md5($Password);
 
-      <label ><b>Password</b></label>
-      <input name="Password" type="password" placeholder="Enter Password" name="psw" required>
+      $sql = "SELECT * FROM transporter WHERE Email = '$Username' AND Pass = '$Password' ";
+      $result = mysqli_query($conn,$sql);
+      if (mysqli_num_rows($result)==1) {
 
-      <button name="btn_save" type="submit" >Login</button>
-      <label>
-        <input type="checkbox" class="checkboxs" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+        echo "<h1>You have successfully logged in</>";
 
-    <div class="container">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw"><a href="#">Forgot Password?</a></span>
-    </div>
-  </form>
-  <div class="clear"></div>
-</div>
+
+      }
+      else {
+        echo "<h1>Incorrect username/password</>";
+
+      }
+
+    }
+
+
+ ?>
 
 
 
