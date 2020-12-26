@@ -71,15 +71,24 @@
       $Password = $_POST['Password'];
       $Password = md5($Password);
 
-      //$sql = "select * from customer where Email = '$Username' AND Password = '$Password' limit 1";
+
       $sql = "SELECT * FROM customer WHERE Email = '$Username' AND Pass = '$Password' ";
       $result = mysqli_query($conn,$sql);
-      if (mysqli_num_rows($result)===1) {
 
-        echo "<h1>You have successfully logged in</>";
+      if (mysqli_num_rows($result)==1) {
 
+				$query = "SELECT * FROM customer WHERE Email = '$Username'  ";
+				$data = mysqli_query($conn,$query);
+				$total = mysqli_num_rows($data);
+				$results = mysqli_fetch_assoc($data);
+		    $Name = $results['Name'];
 
-      }
+				if ($total!=0)
+				{
+		 			 echo "<h1>Hello $Name,</>";
+				}
+
+			}
       else {
         echo "<h1>Incorrect username/password</>";
 
@@ -89,7 +98,38 @@
 
 
  ?>
+</table>
+ <h1>Your Orders</h1>
+ <table border:"10" style="width:100% ; float:center; font-family: 'Arial'; color:white; font-size:20px;">
+	 <tr>
+		 <th>Name</th>
+		 <th>MobNo</th>
+		 <th>Weight</th>
+		 <th>Destination</th>
+		 <th>Type</th>
+	 </tr>
+  <?php
 
+   $querys = "SELECT * FROM orders WHERE Name = '$Name'";
+   $datas = mysqli_query($conn,$querys);
+   $totalr = mysqli_num_rows($datas);
+	 if ($totalr!=0)
+	 {
+		 while (($resul = mysqli_fetch_assoc($datas)))
+		 {
+			 echo "
+				<tr>
+				<th>".$resul['Name']."</th>
+				<th>".$resul['MobNo']."</th>
+				<th>".$resul['Weight']."kg</th>
+				<th>".$resul['Destination']."</th>
+				<th>".$resul['Type']."</th>
+				</tr>";
+		 }
+	 }
+  ?>
+</table>
+<h1><a href="newOrder.html">New Order</h1>
 
 
 </div>

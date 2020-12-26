@@ -63,34 +63,18 @@
 </div>
 
 <?php
-
-    require_once('connection.php');
-    if (isset($_POST['Username'])) {
-
-      $Username = $_POST['Username'];
-      $Password = $_POST['Password'];
-      $Password = md5($Password);
-
-      $sql = "SELECT * FROM transporters WHERE Email = '$Username' AND Pass = '$Password' ";
-      $result = mysqli_query($conn,$sql);
-      if (mysqli_num_rows($result)==1) {
-				$results = mysqli_fetch_assoc($result);
-		    $Name = $results['Name'];
-        echo "<h1>Hello $Name,</>";
-				require_once 'orders.php';
-
-
-      }
-      else {
-        echo "<h1>Incorrect username/password</>";
-
-      }
-
-    }
-
-
+require_once('connection.php');
+$Name = $_GET['name'];
+$query = "DELETE FROM orders WHERE Name = '$Name' ";
+$data = mysqli_query($conn,$query);
+if($data)
+ {
+  echo "<h1>Record deleted from database";
+ }
+else {
+  echo "<h1>Failed to delete record from database";
+}
  ?>
-</table>
 
 </div>
 </div>

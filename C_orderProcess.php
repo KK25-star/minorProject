@@ -62,35 +62,35 @@
 	<h1 class="heading">WELCOME TO GROW MORE FAMILY</h1>
 </div>
 
+
 <?php
 
-    require_once('connection.php');
-    if (isset($_POST['Username'])) {
+   require_once('connection.php');
 
-      $Username = $_POST['Username'];
-      $Password = $_POST['Password'];
-      $Password = md5($Password);
-
-      $sql = "SELECT * FROM transporters WHERE Email = '$Username' AND Pass = '$Password' ";
-      $result = mysqli_query($conn,$sql);
-      if (mysqli_num_rows($result)==1) {
-				$results = mysqli_fetch_assoc($result);
-		    $Name = $results['Name'];
-        echo "<h1>Hello $Name,</>";
-				require_once 'orders.php';
+    if (isset($_POST['btn-save']))
+    {
+       $UserName = mysqli_real_escape_string($conn,$_POST['UName']);
+       $MobNo = mysqli_real_escape_string($conn,$_POST['MobNo']);
+			 $Weight = mysqli_real_escape_string($conn,$_POST['Weight']);
+       $Destination = mysqli_real_escape_string($conn,$_POST['Dest']);
+			 $Type = mysqli_real_escape_string($conn,$_POST["Type"]);
 
 
-      }
-      else {
-        echo "<h1>Incorrect username/password</>";
+           $sql = "insert into orders (Name,MobNo,Weight,Destination,Type) values ('$UserName','$MobNo','$Weight','$Destination','$Type.')";
+           $result = mysqli_query($conn,$sql);
 
-      }
-
-    }
+           if ($result)
+           {
+              echo "<h1>Your order has been placed</>";
+           }
+           else {
+              echo "<h1>Please check your query</> ";
+           }
+       }
 
 
  ?>
-</table>
+
 
 </div>
 </div>

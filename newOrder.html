@@ -59,38 +59,37 @@
 <div class="page">
 <div class="panel">
 <div class="title">
-	<h1 class="heading">WELCOME TO GROW MORE FAMILY</h1>
+	<h1 class="heading">Order</h1>
 </div>
 
-<?php
 
-    require_once('connection.php');
-    if (isset($_POST['Username'])) {
+<div class="login">
+  <form action="C_orderProcess.php" method="POST">
+        <div class="container">
+        <label><b>Name</b></label>
+        <input name="UName" type="text" placeholder="Enter Name" required/>
+        <label ><b>Mobile No.</b></label>
+        <input name="MobNo" type="text" placeholder="Enter Mobile No." required/>
+				<label><b>Weight</b></label>
+        <input name="Weight" type="text" placeholder="Weight Approx(Kg.)" required/>
+				<label><b>Destination</b></label>
+        <input name="Dest" type="text" placeholder="Destination" required/>
+				<input name="Type" type="radio" id="Normal" value="Normal" required/>
+				<label>Normal</label>
+				<input name="Type" type="radio" id="Delicate" value="Delicate" required/>
+				<label>Delicate</label><br><br>
+        <button name="btn-save" type="submit" >Order</button>
 
-      $Username = $_POST['Username'];
-      $Password = $_POST['Password'];
-      $Password = md5($Password);
+    </div>
 
-      $sql = "SELECT * FROM transporters WHERE Email = '$Username' AND Pass = '$Password' ";
-      $result = mysqli_query($conn,$sql);
-      if (mysqli_num_rows($result)==1) {
-				$results = mysqli_fetch_assoc($result);
-		    $Name = $results['Name'];
-        echo "<h1>Hello $Name,</>";
-				require_once 'orders.php';
+    <div class="container">
+      <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+  <div class="clear"></div>
+</div>
 
 
-      }
-      else {
-        echo "<h1>Incorrect username/password</>";
-
-      }
-
-    }
-
-
- ?>
-</table>
 
 </div>
 </div>

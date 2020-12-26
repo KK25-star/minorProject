@@ -65,7 +65,8 @@
 
 <?php
 
-    require_once('connection.php');
+   require_once('connection.php');
+
     if (isset($_POST['btn-save']))
     {
        $UserName = mysqli_real_escape_string($conn,$_POST['UName']);
@@ -81,7 +82,7 @@
        }
        else {
            $Password = md5($Password);
-           $sql = "insert into transporter (Name,MobNo,Email,Pass,Work) values ('$UserName','$MobNo','$Email','$Password','$Work')";
+           $sql = "INSERT INTO transporters (Name,MobNo,Email,Pass,Work) values ('$UserName','$MobNo','$Email','$Password','$Work')";
            $result = mysqli_query($conn,$sql);
 
            if ($result)

@@ -66,7 +66,8 @@
 <?php
 
     require_once('connection.php');
-    if (isset($_POST['btn_save']))
+
+    if (isset($_POST['btn-save']))
     {
        $UserName = mysqli_real_escape_string($conn,$_POST['UName']);
        $MobNo = mysqli_real_escape_string($conn,$_POST['MobNo']);
@@ -85,10 +86,10 @@
 
            if ($result)
            {
-              echo "Your record has been recorded in database";
+              echo "<h1>Your record has been recorded in database</>";
            }
            else {
-              echo "Please check your query ";
+              echo "<h1>Please check your query </>";
            }
        }
     }
